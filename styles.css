@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --gray:#626262;
+    --bggray:#1f1f1f;
+}
+body {
+    background-color: #121212;
+    color: white;
+    font-family: "Host Grotesk";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 6px;
+}
+
+img {
+    filter: invert(1);
+    cursor: pointer;
+}
+.logo {
+    width: 30%;
+    padding: 10px;
+}
+
+.home {
+    padding: 12px;
+    background-color: var(--bggray);
+    border-radius: 1000px;
+}
+
+.home:hover {
+    transform: scale(1.04);
+}
+
+.search {
+    width: 25%;
+    padding: 12px;
+    border-radius: 30px;
+    margin: 20px;
+    color: grey;
+    cursor: text;
+    background: url("icons8-search.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 25px 25px;
+    padding-left: 40px;
+    background-color: var(--bggray);
+    font-family: "Host Grotesk";
+
+}
+
+placeholder{
+    color: var(--gray);
+    padding: 4px;
+}
+
+input {
+    border: 1px solid var(--bggray);
+    background-color: var(--bggray);
+}
+input:hover{
+    background-color: #282828;;
+}
+
+.premium {
+    border-radius: 28px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.premium:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.install {
+    padding: 13px;
+    column-gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.install:hover {
+    color: #d4cfcf;
+    transform: scale(1.04);
+}
+
+.notify {
+    padding: 15px;
+    filter: brightness(0.5);
+}
+
+.account {
+    margin-right: 0;
+    padding: 12px;
+}
+
+.container {
+    column-gap: 20px;
+}
+
+.library {
+    width: 20%;
+    height: 90vh;
+    border: 2px solid green;
+}
+
+.section {
+    width: 80%;
+    border: 2px solid green;
+    background-image:  linear-gradient(rgb(47,39,89),#121212);
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
+}
+
+footer{
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 6px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
