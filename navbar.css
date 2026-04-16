@@ -1,3 +1,44 @@
+@media (max-width: 768px) {
+
+    nav {
+        /* flex-wrap: wrap; */
+        margin-bottom: 20px;
+        height: 50px;
+        gap: 10px;
+    }
+
+    .search {
+        width: 70% !important;
+        /* order: 3; */
+    }
+
+    .install,
+    .notify ,
+    .home,
+    .premium{
+        display: none !important; /* hide extra items */
+    }
+
+}
+@media (max-width: 1400px) {
+
+    nav {
+        /* flex-wrap: wrap; */
+        margin-bottom: 20px;
+        height: 50px;
+        gap: 10px;
+    }
+
+    .search {
+        width: 70% !important;
+        /* order: 3; */
+    }
+
+    .premium{
+        display: none !important; /* hide extra items */
+    }
+
+}
 nav {
     height: 50px;
     background-color: black;

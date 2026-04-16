@@ -1,23 +1,18 @@
 /* Tablet (2 cards per row) */
 @media (max-width: 900px) {
     .playlistcards {
-        width: calc(50% - 8px);
+        width: calc(50% - 8px) !important;
     }
 }
 
-/* Mobile (1 card per row) */
-@media (max-width: 500px) {
-    .playlistcards {
-        width: 100%;
-    }
-}
 
 .section {
+    background-color: #121212;
+    border-radius: 20px;
     width: 80%;
-    border: 2px solid green;
     background-image: linear-gradient(#2f2759, #121212);
     background-repeat: no-repeat;
-    background-size: 100% 25%;
+    background-size: 100% 40%;
 }
 
 .topselect {

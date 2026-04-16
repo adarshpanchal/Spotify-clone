@@ -15,15 +15,17 @@
 }
 
 .libraryplaylist:hover {
-    background-color: rgb(42,42,42);
+    background-color: rgb(42, 42, 42);
     cursor: pointer;
 }
-.playlistimage{
+
+.playlistimage {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
     padding: 5px 0px;
 }
+
 .playlistimage img {
     border-radius: 5px;
     height: 55px;
@@ -34,6 +36,41 @@
     object-position: center;
 }
 
-.playlistname {
-    padding: 16px 8px;
+.infocard {
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.playlistname2 {
+    font-size: 16px;
+    font-weight: 400;
+    /* border: 1px solid white; */
+    padding-top: 8px;
+    margin-left: 10px;
+    /* height: fit-content; */
+}
+
+.playlistinfo {
+    /* border: 1px solid white; */
+    margin-left: 10px;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.artistimage {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+.artistimage img {
+    border-radius: 95px;
+    height: 55px;
+    width: 55px;
+    top: 50%;
+    left: 50%;
+    /* object-fit: cover; */
+    object-position: center;
 }

@@ -21,6 +21,7 @@ body {
 
 .container {
     column-gap: 20px;
+    background-color: black;
 }
 
 .name {
@@ -52,7 +53,7 @@ img {
     /* filter: invert(1); */
     cursor: pointer;
 }
-
+/* 
 footer {
     height: 70px;
     background-color: black;
@@ -62,4 +63,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+} */
