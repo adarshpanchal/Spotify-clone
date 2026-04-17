@@ -8,7 +8,7 @@
 :root {
     --gray: rgb(180, 180, 180);
     /* --bggray: #1f1f1f; */
-    --bggray:rgb(42,42,42);
+    --bggray: rgb(42, 42, 42);
 }
 
 body {
@@ -53,6 +53,7 @@ img {
     /* filter: invert(1); */
     cursor: pointer;
 }
+
 /* 
 footer {
     height: 70px;

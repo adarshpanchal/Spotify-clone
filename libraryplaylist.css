@@ -1,8 +1,29 @@
+@media (max-width:1300px){
+    .playlistinfo{
+        display: none;
+    }
+    .playlistname2{
+        display: flex;
+        height: 65px;
+        padding: 5px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 1200px) {
+.librarycard{
+    overflow-y:auto;
+}
+}
 .librarycard {
     flex-direction: column;
     gap: 10px;
     margin: 10px;
     overflow-y: auto;
+    /* --- */
+    flex: 1;
+    min-height: 0;
+
 }
 
 .libraryplaylist {

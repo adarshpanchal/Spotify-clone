@@ -14,4 +14,20 @@ buttons.forEach(e => {
     })
 });
 
+const toggle = document.querySelector(".toggle");
+const library = document.querySelector(".library");
+const overlay = document.querySelector(".overlay");
+const section = document.querySelector(".section");
+
+toggle.addEventListener("click", () => {
+    library.classList.toggle("open");
+    overlay.classList.toggle("show");
+    section.classList.toggle("bg")
+});
+
+overlay.addEventListener("click", () => {
+    library.classList.remove("open");
+    overlay.classList.remove("show");
+    section.classList.remove("bg")
+});
 

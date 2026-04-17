@@ -1,9 +1,51 @@
-@media (max-width: 900px) {
-    .library {
-      display: none !important;
+@media (max-width: 1300px) {
+    .libraryselect {
+        flex-wrap: wrap !important;
+        row-gap: 10px;
     }
-    .section{
-        width: 100%;
+}
+
+@media (max-width: 900px) {
+
+    /* added by gpt */
+    .library {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 40% !important;
+        height: calc(100vh - 120px);
+        transform: translateX(-110%);
+        transition: transform 0.35s ease;
+        z-index: 1000;
+        overflow-y: auto !important;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .library.open {
+        transform: translateX(0);
+        filter: brightness(1) !important;
+    }
+    .librarycard {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+    }
+    .nav {
+        position: sticky;
+        top: 0;
+    }
+
+    /* ------ */
+    .section {
+        width: 100% !important;
+        margin: 0px 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .install {
+        display: none;
     }
 }
 
@@ -11,10 +53,14 @@
     width: 20%;
     height: calc(90vh - 70px);
     border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     display: flex;
     flex-direction: column;
     background-color: #121212;
     margin-bottom: 0;
+    /* ---- */
+    transition: transform 0.35s ease;
 }
 
 .libraryNavbar {
@@ -57,6 +103,7 @@
     margin-left: 26px;
     column-gap: 12px;
     width: 18%;
+    flex-wrap: nowrap;
 }
 
 .libraryselect li {

@@ -2,7 +2,7 @@
 
     nav {
         /* flex-wrap: wrap; */
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         height: 50px;
         gap: 10px;
     }
@@ -15,16 +15,22 @@
     .install,
     .notify ,
     .home,
-    .premium{
+    .premium,
+    .account{
         display: none !important; /* hide extra items */
     }
 
+}
+@media (min-width :900px){
+    .toggle{
+        display: none;
+    }
 }
 @media (max-width: 1400px) {
 
     nav {
         /* flex-wrap: wrap; */
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         height: 50px;
         gap: 10px;
     }
@@ -45,11 +51,19 @@ nav {
     color: white;
     align-items: center;
     padding: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav img {
     filter: invert(1);
     cursor: pointer;
+}
+.toggle{
+    /* border: 2px solid green; */
+    padding-top: 5px;
+    margin-left: 13px;
 }
 .logo {
     width: 30%;

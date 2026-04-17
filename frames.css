@@ -1,12 +1,17 @@
 @media (max-width:1200px) {
     .frames{
         flex-wrap: wrap;
+        row-gap: 20px;
+        /* height: ; */
     }
     .frames iframe{
         width: calc(50% - 20px) !important;
-        height: 200px !important;
+        height: 392px !important;
     }
-    
+    .library{
+        height: auto !important;
+        width:30% !important;
+    }
 }
 @media (max-width:768px) {
     .frames{
@@ -17,7 +22,10 @@
         width: 100% !important;
         height: 200px !important;
     }
-    
+    .library{
+        height: auto !important;
+        width:40% !important;
+    }
 }
 @media (max-width:550px){
     .frames{
@@ -26,20 +34,25 @@
     .frames iframe{
         height: 400px !important;
     }
+    .dm5{
+        margin-bottom: 10px;
+    }
+    .library{
+        height: auto !important;
+        width:60% !important;
+    }
 }
 
 
 .frames{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px;
     column-gap: 20px;
     overflow-x: auto;
 }
 .frames iframe{
     border-radius:12px;
     width: 28%;
-    height: 400px
+    height: 392px
 }
 .controls img{
     filter: invert(1);
@@ -49,10 +62,11 @@
     transform: scale(2);
 }
 footer {
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    bottom: 0 ;
+    z-index: 1000;
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
     background: black;
     display: flex;
     justify-content: space-between;
