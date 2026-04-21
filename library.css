@@ -3,6 +3,7 @@
         flex-wrap: wrap !important;
         row-gap: 10px;
     }
+    
 }
 
 @media (max-width: 900px) {
