@@ -1,4 +1,4 @@
-# v.Spotify
+# Spotify-Clone
 
 A Spotify-inspired front-end music interface built with HTML, CSS, and vanilla JavaScript.
 
@@ -31,7 +31,7 @@ This project recreates a modern music app layout with:
 ## Project Structure
 
 ```text
-v.Spotify/
+Spotify/
 ├── index.html
 ├── script.js
 ├── styles.css
